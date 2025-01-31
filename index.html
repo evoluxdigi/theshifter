@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
+    <meta name="google-site-verification" content="YCB4mN6vDH5RmQpqonsUY7MWz9j512Biuy__nrAtgfI">
+    <style data-href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&amp;family=Orbitron:wght@400;700&amp;display=swap">@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTQ.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTQ.woff) format('woff')}@font-face{font-family:'Orbitron';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xpQ.woff) format('woff')}@font-face{font-family:'Orbitron';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1ny_CmxpQ.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Orbitron';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/orbitron/v31/yMJRMIlzdpvBhQQL_Qq7dy1biN15.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Orbitron';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/orbitron/v31/yMJRMIlzdpvBhQQL_Qq7dy1biN15.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>The Shifters</title>
+</head>
+<body>
+    <style>
+        html, body {
+            margin:0px;
+            padding:0px;
+            overflow-x: hidden;
+        }
+        .header{
+            width: 100vw;
+            height:100vh;
+            background: url('images/main.webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header h1{
+            font-family: Orbitron,sans-serif;
+            color:white;
+            font-size:8vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0px;
+            padding-top:20vh;
+        }
+        .social_icons{
+            position: absolute;
+            top: 3vh;
+            right: 2vw;
+        }
+        .social_icons a img{
+            width: 4vw;
+        }
+        .header p{
+            background-color: black;
+            border: .3vh solid white;
+            width: 55vw;
+            padding: 5vh 2vw;
+            text-align: center;
+            color: white;
+            font-family: Orbitron,sans-serif;
+            font-weight: bold;
+            font-size: 2vh;
+            margin-top: 20vh;
+            
+        }
+        .h_video{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+        .h_video video{
+            width: 100vw;
+        }
+        .products{
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5vh 0px;
+        }
+        .one{
+            width: 22%;
+            position: relative;
+        }
+        .one img{
+            width: 100%;
+            border-radius: 2vh;
+        }
+        .one h1{
+            color: black;
+            font-family: Orbitron,sans-serif;
+            font-weight: lighter;
+            font-size: 2.4vh;
+            margin-top: 2vh;
+            margin-bottom: 0px;
+        }
+        .one p{
+            color: black;
+            font-family: Orbitron,sans-serif;
+            font-weight: lighter;
+            font-size: 1.8vh;
+            margin-top: 0vh;
+            margin-bottom: 0px;
+            opacity: .6;
+        }
+        .one h4{
+            color: black;
+            font-family: Orbitron,sans-serif;
+            font-weight: bolder;
+            font-size: 3vh;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            text-align: right;
+            width: 100%;
+
+        }
+        .one a{
+            color: white;
+            font-family: Orbitron,sans-serif;
+            font-weight: bolder;
+            font-size: 3vh;
+            width: 100%;
+            background-color: rgb(185, 28, 28);
+            text-decoration: none;
+            padding: 1.5vh 31% ;
+            margin-top: 3vh;
+            transition: background .35s ease-in-out;
+        }
+        .one a:hover{
+            background-color: rgb(31, 41, 55);
+        }
+
+    </style>
+    <div class="header">
+        <div class="social_icons">
+            <a href="https://x.com/theshifters_">
+                <img src="images/twitter.webp" alt="">
+            </a>
+        </div>
+        <h1>The Shifters</h1>
+
+        <p>CA: EANP48DqK7AguE54bszqAg5 cioN4mbSf9yPBJVvNpump </p>
+    </div>
+    <div class="h_video">
+        <video src="images/main.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="products">
+        <div class="one">
+            <img src="images/MAGNITUDE.png" alt="">
+            <h1>Magnitude - Special Edition</h1>
+            <p>Individually Signed</p>
+            <h4>£3000.00</h4>
+            <a href="#">Sold Out</a>
+        </div>
+        <div class="one">
+            <img src="images/PENTAGON.png" alt="">
+            <h1>Pentagon - Special Edition</h1>
+            <p>Individually Signed</p>
+            <h4>£3000.00</h4>
+            <a href="#">Sold Out</a>
+        </div>
+        <div class="one">
+            <img src="images/VELOCITY.png" alt="">
+            <h1>Velocity - Special Edition</h1>
+            <p>Individually Signed</p>
+            <h4>£3000.00</h4>
+            <a href="#">Sold Out</a>
+        </div>
+        <div class="one">
+            <img src="images/VORTEX.png" alt="">
+            <h1>Vortex - Special Edition</h1>
+            <p>Individually Signed</p>
+            <h4>£3000.00</h4>
+            <a href="#">Sold Out</a>
+        </div>
+    </div>
+    <style>
+        .about{
+            width: 100vw;
+            background-color: black;
+            padding: 5vh 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .about h1{
+            font-family: Orbitron,sans-serif;
+            color:white;
+            font-size:8vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0px;
+            margin-bottom:4vh
+            
+        }
+        .about p{
+            width: 70vw;
+            background-color: white;
+            padding: 4vh;
+            font-family: Orbitron,sans-serif;
+            font-weight: lighter;
+            font-size:2vh;
+        }
+    </style>
+
+    <div class="about">
+        <h1>Shifters</h1>
+        <p>
+            Introducing The Shifters AI Coin: Redefining Crypto Intelligence
+<br><br>
+Building on the success of our groundbreaking 2022 NFT project, The Shifters, we are proud to introduce
+The Shifters AI Coin. This isn’t just another digital asset—it&#39;s the key to an AI-driven ecosystem designed
+to revolutionize how crypto investors evaluate, verify, and invest in cryptocurrencies, including high-risk
+memecoins.
+<br><br>
+In a world where scams and rug pulls run rampant, transparency and actionable insights are critical. The
+Shifters AI Chatbot is here to provide a smarter, safer, and more informed investment journey.
+<br><br>
+Key Features of The Shifters AI Chatbot <br><br>
+1. Comprehensive Scam Detection <br><br>
+The AI engine is trained to analyze smart contracts, tokenomics, and historical patterns to flag red flags
+such as: <br><br>
+
+Hidden backdoors allowing developers to withdraw liquidity at will.
+Suspicious minting powers or unlimited token issuance.
+Honeypot traps where users can buy but cannot sell tokens.
+Sudden changes in ownership or admin rights.
+By breaking down complex technical indicators into digestible insights, the chatbot helps both new and
+experienced investors identify scams before they fall victim.
+<br><br>
+2. Developer Transaction Monitoring <br><br>
+One of the most innovative features of our platform is the ability to track and analyze developer wallet
+transactions. Investors gain unprecedented visibility into:
+<br><br>
+Fund movements between developer wallets and third-party accounts.
+Wallet clustering to identify connections between seemingly separate projects.
+Patterns indicative of pump-and-dump schemes or premeditated rug pulls.
+This level of transparency empowers users to hold developers accountable.
+<br><br>
+3. Advanced Data Analytics for Smarter Investments <br><br>
+The chatbot aggregates and displays crucial metrics, including:
+<br><br>
+Liquidity pool health and lock duration analysis.
+Trading volume fluctuations and unusual market patterns.
+Community engagement levels on social media and forums.
+Smart contract verification and audit scores.
+These insights enable investors to make more informed decisions backed by data rather than hype.
+<br><br>
+4. AI-Powered Risk Scoring System <br><br>
+The chatbot uses machine learning models to provide a dynamic risk score for each token or project,
+factoring in elements such as:
+<br><br>
+Historical price stability.
+Developer reputation.
+Community trust levels.
+Investors receive a clear, actionable report detailing the risk level before they decide to invest.
+<br><br>
+5. Continuous Learning and Updates <br><br>
+The AI engine is designed to evolve continuously, learning from emerging scams, market trends, and
+new blockchain technologies. This ensures that users always have access to the latest security insights.
+<br><br>
+The Shifters Coin: Driving the Ecosystem
+The Shifters AI Coin powers the entire ecosystem. Holders benefit from exclusive features, including:
+<br><br>
+Premium Access: Unlock deeper analytics and faster response times from the chatbot.
+Staking Rewards: Earn rewards by participating in network security and governance.
+Community Governance: Influence platform development and feature additions through decentralized
+voting <br><br>
+A Vision for a Safer Crypto Future
+<br><br>
+Our mission is simple: to protect and empower crypto investors through cutting-edge AI technology. The
+Shifters AI project isn&#39;t just about innovation—it&#39;s about trust, transparency, and transforming the way
+people approach crypto investments.
+<br><br>
+Whether you’re a seasoned trader or a newcomer, The Shifters AI ecosystem offers the tools you need
+to navigate the market confidently and securely.
+<br><br>
+Join us on this journey to make crypto investing smarter, safer, and more transparent than ever before.
+        </p>
+    </div>
+    <style>
+        .news{
+            background: black;
+            width: 100vw;
+            height: 80vh;
+
+        }
+        .news .n_tt{
+            font-family: Orbitron,sans-serif;
+            color:white;
+            font-size:8vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0px;
+            padding-top:8vh;
+        }
+        .nw_w{
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10vh 0px;
+        }
+        .two{
+            width: 17%;
+            position: relative;
+            border: .5vh solid white;
+            padding: 5vh;
+        }
+        .two h1{
+            color: white;
+            font-family: Orbitron,sans-serif;
+            font-weight: lighter;
+            font-size: 2.4vh;
+            margin-top: 0vh;
+            margin-bottom: 6vh;
+        }
+        .two a{
+            width:100%;
+            text-align: center;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-family: Orbitron,sans-serif;
+            font-weight: bolder;
+            font-size: 2.5vh;
+            width: 100%;
+            padding: 1.5vh 10% ;
+            margin-top: 3vh;
+            transition: background .35s ease-in-out;
+        }
+    </style>
+    <div class="news">
+        <h1 class="n_tt">News</h1>
+        <div class="nw_w">
+            <div class="two">
+                <h1>The Shifters NFT - MENAFN</h1>
+                <a href="https://menafn.com/1109073703/The-Shifters-NFT-From-A-2-Million-Hack-To-A-Bold-2025-Comeback-With-A-New-Collection-AI-Solutions-And-Investor-Call">View More</a>
+            </div>
+            <div class="two">
+                <h1>The Shifters NFT - MEDIAWORLDTODAY</h1>
+                <a href="https://www.mediaworldtoday.com/article/775492555-the-shifters-nft-from-a-2-million-hack-to-a-bold-2025-comeback-with-a-new-collection-ai-solutions-and-investor-call">View More</a>
+            </div>
+            <div class="two">
+                <h1>The Shifters NFT - BUSINESSHERALDON</h1>
+                <a href="https://www.businessheraldonline.com/article/775492555-the-shifters-nft-from-a-2-million-hack-to-a-bold-2025-comeback-with-a-new-collection-ai-solutions-and-investor-call">View More</a>
+            </div>
+            <div class="two">
+                <h1>The Shifters NFT - THE BUSINESS GAZETTE ONLINE</h1>
+                <a href="https://www.thebusinessgazetteonline.com/article/775492555-the-shifters-nft-from-a-2-million-hack-to-a-bold-2025-comeback-with-a-new-collection-ai-solutions-and-investor-call">View More</a>
+            </div>
+        </div>
+    </div>
+
+<style>
+    .footer{
+        width: 100vw;
+        padding: 5vh 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer h1{
+        color: black;
+        font-family: Orbitron,sans-serif;
+        font-weight: lighter;
+        font-size: 2.5vh;
+    }
+</style>
+
+<div class="footer">
+    <h1>© 2023 Shift Labs. 54 Poland Street, Soho, London, W1F 7NJ</h1>
+</div>
+    
+
+
+<style>
+    @media (max-width: 1000px) {
+        .social_icons a img {
+            width: 15vw;
+        }
+        .social_icons {
+            position: absolute;
+            top: 3vh;
+            right: 5vw;
+        }
+        .header h1 {
+            font-family: Orbitron, sans-serif;
+            color: white;
+            font-size: 4vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0px;
+            padding-top: 23vh;
+        }
+        .header p {
+            background-color: black;
+            border: .3vh solid white;
+            width: 55vw;
+            padding: 5vh 11vw;
+            text-align: center;
+            color: white;
+            font-family: Orbitron, sans-serif;
+            font-weight: bold;
+            font-size: 1.5vh;
+            margin-top: 12vh;
+        }
+        .h_video video {
+            width: auto;
+            height: 100vh;
+        }
+        .products {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 5vh 0px;
+        }
+        .one {
+            width: 80%;
+            position: relative;
+            margin-bottom: 7vh;
+        }
+        .one h1 {
+            color: black;
+            font-family: Orbitron, sans-serif;
+            font-weight: lighter;
+            font-size: 2.8vh;
+            margin-top: 2vh;
+            margin-bottom: 0px;
+        }
+        .one a {
+            color: white;
+            font-family: Orbitron, sans-serif;
+            font-weight: bolder;
+            font-size: 3vh;
+            width: 100%;
+            background-color: rgb(185, 28, 28);
+            text-decoration: none;
+            padding: 1.5vh 30%;
+            margin-top: 3vh;
+            transition: background .35s ease-in-out;
+        }
+        .about h1 {
+            font-family: Orbitron, sans-serif;
+            color: white;
+            font-size: 4vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 4vh;
+        }
+        .about p {
+            width: 65vw;
+            background-color: white;
+            padding: 4vh;
+            font-family: Orbitron, sans-serif;
+            font-weight: lighter;
+            font-size: 1.5vh;
+        }
+        .news .n_tt {
+            font-family: Orbitron, sans-serif;
+            color: white;
+            font-size: 5vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0px;
+            padding-top: 0vh;
+        }
+        .news {
+            height: auto;
+        }
+        .nw_w {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5vh 0px;
+        }
+        .two {
+            width: 60%;
+            position: relative;
+            border: .5vh solid white;
+            padding: 5vh;
+            margin-bottom: 5vh;
+        }
+        .footer h1 {
+            color: black;
+            font-family: Orbitron, sans-serif;
+            font-weight: lighter;
+            width: 70vw;
+            text-align: center;
+            font-size: 1.5vh;
+        }
+
+        
+    }
+
+</style>
+</body>
+</html>
